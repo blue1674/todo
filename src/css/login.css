@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(128, 128, 128, 0.486);
+}
+button{
+    position: relative;
+}
+button>img{
+    position: absolute;
+    left: 8%;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    #loginForm{
+        width: 80%!important;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #loginForm{
+        width: 50%!important;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #loginForm{
+        width: 38%!important;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #loginForm{
+        width: 28%!important;
+        margin-top: 40px !important;
+    }
+    
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

@@ -1,0 +1,35 @@
+#modal-header{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h5 . closeBtn"
+    "subtitle . .";
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+#signUpTitle{
+    grid-area: h5;
+    padding-top: 2%;
+}
+
+#signUpSubtitle{
+    grid-area: subtitle;
+    color: rgba(128, 128, 128, 0.842);
+}
+#signUpClose{
+    grid-area: closeBtn;
+    top: 0;
+    align-self: start;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+#signUpSave{
+ left: 2%;
+ top: 2%;
+ min-width: 40%;
+}
+#modal-footer{
+    justify-content: center;
+}

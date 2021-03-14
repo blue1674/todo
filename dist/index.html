@@ -19,20 +19,20 @@
         <div class="position-relative mt-5 ">
             <form class="position-absolute top-0 start-50 translate-middle-x w-100" id="loginForm">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="inputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="inputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword1">
                 </div>
 
                 <div class="d-grid gap-2 mt-4">
                     <button type="button" class="btn btn-primary">Sign In</button>
                 </div>
                 <div class="d-grid gap-2 mt-4">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signUpForm">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signUpModal">
                         <!-- data-bs-target="#exampleModal" -->
                         Create an Account
                     </button>
@@ -59,7 +59,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="signUpForm" tabindex="-1" aria-labelledby="signUpLabel" aria-hidden="true">
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header  position-relative" id="modal-header">
@@ -70,23 +70,38 @@
                 </div>
 
                 <div class="modal-body">
-                    <form>
+                    <form id="signUpForm">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput"
+                            <input type="text" class="form-control" id="username"
                                 placeholder="between 4 and 16 letters">
-                            <label for="floatingInput">Username</label>
+                            <label for="username">Username</label>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                Please choose a username between 4 and 24 characters. 
+                            </div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <label for="email">Email address</label>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                Please enter a valid email address. 
+                            </div>
                         </div>
                         <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <label for="password">Password</label>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                Password must be at least 8 characters long and must contain a letter, digit and a special character.
+                            </div>
                         </div>
+                        <div class="mt-2 mb-2">
+                            <input type="checkbox" class="form-check-input" id="checkbox" value="">
+                            <label for="checkbox" class="form-check-label">Show Password</label>
+                        </div>
+
+
                         <div class="modal-footer" id="modal-footer">
-                                <button type="button" class="btn btn-success btn-block btn-lg mt-3"
-                                    id="signUpSave">Sign Up</button>
+                            <button type="button" class="btn btn-success btn-block btn-lg mt-3" id="signUpSave">Sign
+                                Up</button>
                         </div>
                     </form>
                 </div>

@@ -16,7 +16,7 @@
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"ce611fd96cf63ee5c5a7.js\";\n\n//# sourceURL=webpack://todo/./dist/main.js?");
+eval("module.exports = __webpack_require__.p + \"53b4ad374190b088a3db.js\";\n\n//# sourceURL=webpack://todo/./dist/main.js?");
 
 /***/ }),
 
@@ -260,7 +260,7 @@ eval("const signUpBtn = document.getElementById('signUpSave');\nsignUpBtn.addEve
 /******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = scriptUrl + "../";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

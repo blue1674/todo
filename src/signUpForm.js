@@ -19,7 +19,6 @@ checkbox.addEventListener('click', function () {
 
 function validate() {
     const inputList = document.querySelectorAll('.form-floating input');
-    console.log(inputList);
     inputList.forEach(x => {
         if (x.value.match(validator[`${x.id}`])) {
             x.classList.add('is-valid');

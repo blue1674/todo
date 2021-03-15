@@ -1,0 +1,14 @@
+#modal-header{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h5 . closeBtn"
+    "subtitle . .";
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+#modal-footer{
+    justify-content: center;
+}
